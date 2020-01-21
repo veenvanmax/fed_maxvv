@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NS Verhalen | Registreren en inloggen</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+            <img src="images/NSstories%20logo.png" alt="NS Stories logo">
+        </a>
+                    <li>
+                        <p id="inloggen"> lnloggen </p>
+                    </li>
+
+                    <li>
+                        <a href="registrereninloggen.html">
+                            <p> Mijn lijst </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <div class="dropform">
+                            <p>Zoeken</p>
+                            <section class="dropup-content">
+                                <form action="zoekresultaten.html">
+                                    <fieldset>
+                                        <legend>Zoeken en filteren</legend>
+                                        <label for="zoeken">Zoeken:</label><br>
+                                        <input name="zoeken" id="zoeken" type="text"><br>
+                                        <label for="sorteren">Sorteren op:</label><br>
+                                        <select name="sorteren" id="sorteren">
+                                <option value="Meest gelezen">Meest gelezen</option>
+                                <option value="Best beoordeeld">Best beoordeeld</option>
+                                <option value="Nieuwste">Nieuwste</option>
+                                <option value="Oudste">Oudste</option>
+                                <option value="Langste leestijd">Langste leestijd</option>
+                                <option value="Korste leestijd">Kortste leestijd</option>
+                                </select> <br>
+                                        <label for="tags">Filteren op tags:</label> <br>
+                                        <select name="tags" id="tags">
+                                    <option value="Spanning">Spanning</option>
+                                    <option value="Humor">Humor</option>
+                                    <option value="Romantiek">
+                                        Romantiek
+                                    </option>
+                                    <option value="Horror">
+                                        Horror
+                                    </option>
+                                    <option value="Oorlog">
+                                        Oorlog
+                                    </option>
+                                    <option value="Fantasie">
+                                        Fantasie
+                                    </option>
+                                    <option value="Mysterie">
+                                        Mysterie
+                                    </option>
+                                    <option value="Psychologisch">
+                                        Psychologisch
+                                    </option>
+                                </select><br>
+                                        <input type="submit" id="opdracht" value="Zoek">
+                                    </fieldset>
+                                </form>
+                            </section>
+                        </div>
+                    </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article>
+            <form action="ingelogdindex.html">
+                <fieldset>
+                    <legend>Registreren:</legend>
+                    <label for="name">Naam</label><br>
+                    <input type="text" name="name" required placeholder="Voornaam is voldoende"><br>
+                    <label for="email">E-mailadres:</label> <br>
+                    <input type="email" id="email" name="email" required placeholder="E-mail"> <br>
+                    <label for="password">Wachtwoord <br>
+                    (minimaal 6 tekens, 1 hoofdletter,<br> 1 kleine letter en 1 cijfer):</label><br>
+                    <!––pattern valideert het wachtwoord––>
+                    <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" id="password" name="password" required placeholder="Wachtwoord"> <br>
+                    <label for="passconf">Wachtwoord bevestigen:</label><br>
+                    <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" id="passconf" name="passconf" required placeholder="Herhaal wachtwoord"> <br>
+                    <input type="submit" id="regi" value="Registreer">
+                </fieldset>
+            </form>
+        </article>
+
+        <article>
+            <form action="ingelogdindex.html">
+                <fieldset>
+                    <legend>lnloggen:</legend>
+                    <label for="email">E-mailadres:</label> <br>
+                    <input type="email" id="email" name="email" required placeholder="E-mail"> <br>
+                    <label for="password">Wachtwoord:</label><br>
+                    <input type="password" id="password" name="password" required placeholder="Wachtwoord"> <br>
+                    <input type="submit" id="loginbutton" value="Log in">
+
+                </fieldset>
+            </form>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>©NS 2018-2020</p>
+    </footer>
+</body>
+
+</html>

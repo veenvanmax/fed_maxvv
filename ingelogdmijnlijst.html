@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NS Verhalen | Mijn lijst</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="ingelogdindex.html">
+            <img src="images/NSstories%20logo.png" alt="NS Stories logo">
+        </a>
+                    <li>
+                        <div class="dropform">
+                            <p>Laura</p>
+                            <a href="index.html" class="dropup-content">
+                                Uitloggen </a>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="ingelogdindex.html">
+                            <p> Alle verhalen </p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <div class="dropform">
+                            <p>Zoeken</p>
+                            <section class="dropup-content">
+                                <form action="ingelogdzoekresultaten.html">
+                                    <fieldset>
+                                        <legend>Zoeken en filteren</legend>
+                                        <label for="zoeken">Zoeken:</label><br>
+                                        <input name="zoeken" id="zoeken" type="text"><br>
+                                        <label for="sorteren">Sorteren op:</label><br>
+                                        <select name="sorteren" id="sorteren">
+                                <option value="Meest gelezen">Meest gelezen</option>
+                                <option value="Best beoordeeld">Best beoordeeld</option>
+                                <option value="Nieuwste">Nieuwste</option>
+                                <option value="Oudste">Oudste</option>
+                                <option value="Langste leestijd">Langste leestijd</option>
+                                <option value="Korste leestijd">Kortste leestijd</option>
+                                </select> <br>
+                                        <label for="tags">Filteren op tags:</label> <br>
+                                        <select name="tags" id="tags">
+                                    <option value="Spanning">Spanning</option>
+                                    <option value="Humor">Humor</option>
+                                    <option value="Romantiek">
+                                        Romantiek
+                                    </option>
+                                    <option value="Horror">
+                                        Horror
+                                    </option>
+                                    <option value="Oorlog">
+                                        Oorlog
+                                    </option>
+                                    <option value="Fantasie">
+                                        Fantasie
+                                    </option>
+                                    <option value="Mysterie">
+                                        Mysterie
+                                    </option>
+                                    <option value="Psychologisch">
+                                        Psychologisch
+                                    </option>
+                                </select><br>
+                                        <input type="submit" id="opdracht" value="Zoek">
+                                    </fieldset>
+                                </form>
+                            </section>
+                        </div>
+                    </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article id="Jules">
+            <img src="images/jules.png" alt="Jules Deelder">
+            <h2>Jules Deelder</h2>
+            <p><span>Leestijd: 6 minuten</span> <span>Tags: humor, psychologisch</span></p>
+
+            <a href="ingelogddeelder.html"><button>Lezen</button></a>
+        </article>
+
+
+        <article id="Verliefd">
+            <img src="images/verliefd.png" alt="Verliefd">
+            <h2>Verliefd</h2>
+            <p><span>Leestijd: 4 minuten</span> <span>Tags: romantiek</span></p>
+
+            <a href="ingelogddeelder.html"><button>Lezen</button></a>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>©NS 2018-2020</p>
+    </footer>
+</body>
+
+</html>

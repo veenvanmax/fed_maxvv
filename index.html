@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NS Verhalen index</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+            <img src="images/NSstories%20logo.png" alt="NS Stories logo">
+        </a>
+                    <li>
+                        <p id="inloggen"> lnloggen </p>
+                    </li>
+
+                    <li>
+                        <a href="registrereninloggen.html">
+                            <p> Mijn lijst </p>
+                        </a>
+                    </li>
+                    <!––zoekformulier dat uitklapt ––>
+                    <li>
+                        <div class="dropform">
+                            <p>Zoeken</p>
+                            <section class="dropup-content">
+                                <form action="zoekresultaten.html">
+                                    <fieldset>
+                                        <legend>Zoeken en filteren</legend>
+                                        <label for="zoeken">Zoeken:</label><br>
+                                        <input name="zoeken" id="zoeken" type="text"><br>
+                                        <label for="sorteren">Sorteren op:</label><br>
+                                        <select name="sorteren" id="sorteren">
+                                <option value="Meest gelezen">Meest gelezen</option>
+                                <option value="Best beoordeeld">Best beoordeeld</option>
+                                <option value="Nieuwste">Nieuwste</option>
+                                <option value="Oudste">Oudste</option>
+                                <option value="Langste leestijd">Langste leestijd</option>
+                                <option value="Korste leestijd">Kortste leestijd</option>
+                                </select> <br>
+                                        <label for="tags">Filteren op tags:</label> <br>
+                                        <select name="tags" id="tags">
+                                    <option value="Spanning">Spanning</option>
+                                    <option value="Humor">Humor</option>
+                                    <option value="Romantiek">
+                                        Romantiek
+                                    </option>
+                                    <option value="Horror">
+                                        Horror
+                                    </option>
+                                    <option value="Oorlog">
+                                        Oorlog
+                                    </option>
+                                    <option value="Fantasie">
+                                        Fantasie
+                                    </option>
+                                    <option value="Mysterie">
+                                        Mysterie
+                                    </option>
+                                    <option value="Psychologisch">
+                                        Psychologisch
+                                    </option>
+                                </select><br>
+                                        <input type="submit" id="opdracht" value="Zoek">
+                                    </fieldset>
+                                </form>
+                            </section>
+                        </div>
+                    </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!––Login veld sat verschijnt wanneer je linksboven op inloggen klikt, werkt met javascript––>
+        <article class="login">
+
+            <p id="kruisje">X</p>
+
+            <form action="ingelogdindex.html">
+
+                <fieldset>
+                    <legend>lnloggen:</legend>
+                    <label for="email">E-mailadres:</label> <br>
+                    <input type="email" id="email" name="email" required placeholder="E-mail"> <br>
+                    <label for="password">Wachtwoord:</label><br>
+                    <input type="password" id="password" name="password" required placeholder="Wachtwoord"> <br>
+                    <input type="submit" id="loginbutton" value="Log in">
+                </fieldset>
+                <a href="registrereninloggen.html">Registreren</a>
+            </form>
+        </article>
+
+        <article id="Jules">
+            <img src="images/jules.png" alt="Jules Deelder">
+            <h2>Jules Deelder</h2>
+            <p>Leestijd: 6 minuten Tags: humor, psychologisch</p>
+
+            <a href="deelder.html"><button>Lezen</button></a>
+        </article>
+
+        <article id="Blind">
+            <img src="images/blind.png" alt="Blind">
+            <h2>Blind</h2>
+            <p>Leestijd: 7 minuten Tags: psychologisch</p>
+            <a href="blind.html"><button>Lezen</button></a>
+        </article>
+
+        <article id="Verliefd">
+            <img src="images/verliefd.png" alt="Verliefd">
+            <h2>Verliefd</h2>
+            <p>Leestijd: 4 minutenTags: romantiek</p>
+            <a href="deelder.html"><button>Lezen</button></a>
+        </article>
+
+        <article id="Hongerwinter">
+            <img src="images/hongerwinter.png" alt="Hongerwinter">
+            <h2>Hongerwinter</h2>
+            <p>Leestijd: 6 minuten Tags: oorlog, psychologisch</p>
+            <a href="deelder.html"><button>Lezen</button></a>
+        </article>
+
+        <article id="Ongeboren">
+            <img src="images/ongeboren.png" alt="Ongeboren">
+            <h2>Ongeboren</h2>
+            <p>Leestijd: 8 minuten Tags: fantasie, mysterie</p>
+            <a href="deelder.html"><button>Lezen</button></a>
+        </article>
+
+        <article id="Mop">
+            <img src="images/mop.png" alt="Mop">
+            <h2>Mop</h2>
+            <p>Leestijd: 1 minuut Tags: humor</p>
+            <a href="deelder.html"><button>Lezen</button></a>
+        </article>
+
+        <article id="Stoned">
+            <img src="images/stoned.png" alt="Stoned">
+            <h2>Stoned</h2>
+            <p>Leestijd: 3 minuten Tags: humor</p>
+            <a href="deelder.html"><button>Lezen</button></a>
+        </article>
+
+        <article id="Paranoia">
+            <img src="images/paranoia.png" alt="Paranoia">
+            <h2>Paranoia</h2>
+            <p>Leestijd: 12 minuten Tags: psychologisch, mysterie</p>
+            <a href="deelder.html"><button>Lezen</button></a>
+        </article>
+
+        <article id="Western">
+            <img src="images/western.png" alt="Western">
+            <h2>Western</h2>
+            <p> Leestijd: 5 minuten Tags: humor </p>
+            <a href="deelder.html"><button>Lezen</button></a>
+        </article>
+    </main>
+
+    <footer>
+        <p>©NS 2018-2020</p>
+    </footer>
+    <!––script gelinkt ––>
+    <script src="js/inloginteractie.js"></script>
+</body>
+
+</html>
